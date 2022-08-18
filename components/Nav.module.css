@@ -1,0 +1,85 @@
+.menu__icon {
+  display: none;
+  margin-right: 20px;
+}
+
+.nav {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+  font-family: "Nickelodeon2001headline", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 84.52%;
+  letter-spacing: 0.02em;
+  color: #11d028;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 84.52%;
+  letter-spacing: -0.005em;
+  color: #2b2b2b;
+  margin: 0 10px;
+}
+
+.else {
+  padding: 7px 25px;
+  border: 1px solid #11d028;
+  border-radius: 18px;
+  margin: 0 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.005em;
+  color: #f4f4f4;
+  background-color: #11d028;
+  cursor: pointer;
+}
+
+.else__media {
+  display: none;
+}
+
+.cabinet {
+  display: none;
+  color: #11d028;
+}
+
+@media (max-width: 1000px) {
+  .else {
+    display: none;
+  }
+
+  .cabinet {
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: none;
+  }
+  .else__application {
+    display: none;
+  }
+  .menu__icon {
+    display: flex;
+  }
+  .tool__bar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
